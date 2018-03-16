@@ -1,0 +1,173 @@
+[
+    {
+        "kanji":"学生",
+        "hiragana":"がくせい",
+        "romaji":"gakusei",
+        "meaning" : "studente"
+    },
+    {
+        "kanji":"先生",
+        "hiragana":"せんせい",
+        "romaji":"sensei",
+        "meaning" : "maestro"
+    },
+    {
+        "kanji":"医者",
+        "hiragana":"いしゃ",
+        "romaji":"isha",
+        "meaning" : "dottore"
+    },
+    {
+        "kanji":"男の人",
+        "hiragana":"おとこのひと",
+        "romaji":"otokonohito",
+        "meaning" : "uomo"
+    },
+    {
+        "kanji":"女の人",
+        "hiragana":"おんなのひと",
+        "romaji":"onnanohito",
+        "meaning" : "donna"
+    },
+    {
+        "hiragana":"だれ",
+        "romaji":"dare",
+        "meaning" : "chi"
+    },
+    {
+        "kanji":"私",
+        "hiragana":"わたし",
+        "romaji":"watashi",
+        "meaning" : "io"
+    },
+
+    {
+        "hiragana":"あなた",
+        "romaji":"anata",
+        "meaning" : "tu"
+    },
+    {
+        "kanji":"あの人",
+        "hiragana":"あのひと",
+        "romaji":"anohito",
+        "meaning" : "lui"
+    },
+    {
+        "hiragana":"はい",
+        "romaji":"hai",
+        "meaning" : "si"
+    },
+    {
+        "hiragana":"いいえ",
+        "romaji":"iie",
+        "meaning" : "no"
+    },
+    {
+        "hiragana":"これ",
+        "romaji":"kore",
+        "meaning" : "questo"
+    },
+    {
+        "hiragana":"それ",
+        "romaji":"sore",
+        "meaning" : "quello"
+    },
+    {
+        "hiragana":"あれ",
+        "romaji":"are",
+        "meaning" : "quello la'"
+    },
+    {
+        "hiragana":"どれ",
+        "romaji":"dore",
+        "meaning" : "quale"
+    },
+    {
+        "kanji":"傘",
+        "hiragana":"かさ",
+        "romaji":"kasa",
+        "meaning" : "ombrello"
+    },
+    {
+        "hiragana":"パソコン",
+        "romaji":"pasokon",
+        "meaning" : "computer"
+    },
+    {
+        "kanji":"時計",
+        "hiragana":"とけい",
+        "romaji":"tokei",
+        "meaning" : "orologio"
+    },
+    {
+        "hiragana":"この",
+        "romaji":"kono",
+        "meaning" : "questo"
+    },
+    {
+        "hiragana":"その",
+        "romaji":"sono",
+        "meaning" : "quello"
+    },
+    {
+        "hiragana":"あの",
+        "romaji":"ano",
+        "meaning" : "quello la'"
+    },
+    {
+        "hiragana":"ここ",
+        "romaji":"koko",
+        "meaning" : "questo posto"
+    },
+    {
+        "hiragana":"そこ",
+        "romaji":"soko",
+        "meaning" : "quel posto'"
+    },
+    {
+        "hiragana":"あそこ",
+        "romaji":"asoko",
+        "meaning" : "quel posto la'"
+    },
+    {
+        "hiragana":"どこ",
+        "romaji":"doko",
+        "meaning" : "dove"
+    },
+    {
+        "kanji": "学校",
+        "hiragana":"がっこう",
+        "romaji":"gakkou",
+        "meaning" : "scuola"
+    },
+    {
+        "kanji":"教室",
+        "hiragana":"きようしつ",
+        "romaji":"kiyoushitsu",
+        "meaning" : "aula"
+    },
+    {
+        "kanji":"本屋",
+        "hiragana":"ほんや",
+        "romaji":"honya",
+        "meaning" : "libreria"
+    },
+    {
+        "kanji": "花",
+        "hiragana":"はな",
+        "romaji":"hana",
+        "meaning" : "fiore"
+    },
+    {
+        "kanji":"石",
+        "hiragana":"いし",
+        "romaji":"ishi",
+        "meaning" : "sasso"
+    },
+    {
+        "kanji":"部屋",
+        "hiragana":"へや",
+        "romaji":"ano",
+        "meaning" : "quello la'"
+    }
+]
