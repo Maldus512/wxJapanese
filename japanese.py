@@ -173,8 +173,7 @@ class App(wx.App):
         if self.timer:
             self.timer.Stop()
 
-        self.subframe = MainWindow(None, "Kanji", random.choice(tests))
-        self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
+        self.openNew()
         self.MainLoop()
 
 
@@ -182,8 +181,7 @@ class App(wx.App):
         if self.timer and not self.timer.HasRun():
             self.timer.Notify()
         elif not self.subframe:
-            self.subframe = MainWindow(None, "Kanji", random.choice(tests))
-            self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
+            self.openNew()
         elif self.subframe:
             self.subframe.Raise()
 
@@ -192,15 +190,17 @@ class App(wx.App):
             self.subframe.Destroy()
             #self.subframe = None
         
-        self.subframe = MainWindow(None, "Kanji", random.choice(tests))
-        self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
+        with open(os.path.join(os.getcwd(), "japanese.json"), "rb") as f:
+            tests = json.load(f)
+            self.subframe = MainWindow(None, "Kanji", random.choice(tests))
+            self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
 
     def reboot(self, event):
         if self.subframe:
             self.subframe.Destroy()
             #self.subframe = None
         interval = random.randint(5*60,15*60)
-        interval = 2
+        #interval = 2
         self.timer = wx.CallLater(interval*1000, self.openNew)
 
 
@@ -209,6 +209,5 @@ class App(wx.App):
 
 if __name__ == '__main__':
 
-    tests = json.load(open(os.path.join(os.getcwd(), "japanese.json"), "r"))
     app = App()
     app.run()
