@@ -163,28 +163,45 @@ class App(wx.App):
         self.subframe = None
         self.SetTopWindow(frame)
         self.tb = TaskBarIcon()
-        self.tb.setDoubleClickCallback(self.run)
+        self.tb.setDoubleClickCallback(self.raiseOrOpen)
         self.timer = None
         return True
 
     def run(self):
+        if self.subframe:
+            self.subframe.Destroy()
+        if self.timer:
+            self.timer.Stop()
+
+        self.subframe = MainWindow(None, "Kanji", random.choice(tests))
+        self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
+        self.MainLoop()
+
+
+    def raiseOrOpen(self):
         if self.timer and not self.timer.HasRun():
-            if self.subframe:
-                self.subframe.Close()
-                self.subframe = None
             self.timer.Notify()
         elif not self.subframe:
-            self.runTimer()
+            self.subframe = MainWindow(None, "Kanji", random.choice(tests))
+            self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
         elif self.subframe:
             self.subframe.Raise()
 
-
-    def runTimer(self):
+    def openNew(self):
+        if self.subframe:
+            self.subframe.Destroy()
+            #self.subframe = None
+        
         self.subframe = MainWindow(None, "Kanji", random.choice(tests))
-        self.MainLoop()
+        self.subframe.Bind(wx.EVT_CLOSE, self.reboot)
 
+    def reboot(self, event):
+        if self.subframe:
+            self.subframe.Destroy()
+            #self.subframe = None
         interval = random.randint(5*60,15*60)
-        self.timer = wx.CallLater(interval*1000, self.runTimer)
+        interval = 2
+        self.timer = wx.CallLater(interval*1000, self.openNew)
 
 
 

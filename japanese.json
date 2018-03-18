@@ -169,5 +169,10 @@
         "hiragana":"へや",
         "romaji":"ano",
         "meaning" : "quello la'"
+    },
+    {
+        "hiragana":"かばん",
+        "romaji":"kaban",
+        "meaning" : "borsa"
     }
 ]
