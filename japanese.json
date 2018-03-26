@@ -174,5 +174,89 @@
         "hiragana":"かばん",
         "romaji":"kaban",
         "meaning" : "borsa"
+    },
+    {
+        "kanji":"新聞",
+        "hiragana":"しんぶん",
+        "romaji":"shinbun",
+        "meaning" : "giornale"
+    },
+    {
+        "kanji":"何",
+        "hiragana":"なに",
+        "romaji":"nani",
+        "meaning" : "cosa"
+    },
+    {
+        "kanji":"公園",
+        "hiragana":"こうえん",
+        "romaji":"kouen",
+        "meaning" : "parco"
+    },
+    {
+        "kanji":"部屋",
+        "hiragana":"へや",
+        "romaji":"heya",
+        "meaning" : "stanza"
+    },
+    {
+        "kanji":"猫",
+        "hiragana":"ねこ",
+        "romaji":"neko",
+        "meaning" : "gatto"
+    },
+    {
+        "kanji":"犬",
+        "hiragana":"いぬ",
+        "romaji":"inu",
+        "meaning" : "cane"
+    },
+    {
+        "kanji":"子供",
+        "hiragana":"こども",
+        "romaji":"kodomo",
+        "meaning" : "bambino"
+    },
+    {
+        "kanji":"上",
+        "hiragana":"うえ",
+        "romaji":"ue",
+        "meaning" : "sopra"
+    },
+    {
+        "kanji":"下",
+        "hiragana":"した",
+        "romaji":"shita",
+        "meaning" : "sotto"
+    },
+    {
+        "kanji":"前",
+        "hiragana":"まえ",
+        "romaji":"mae",
+        "meaning" : "davanti"
+    },
+    {
+        "kanji":"後ろ",
+        "hiragana":"うしろ",
+        "romaji":"ushiro",
+        "meaning" : "dietro"
+    },
+    {
+        "kanji":"中",
+        "hiragana":"なか",
+        "romaji":"naka",
+        "meaning" : "dentro"
+    },
+    {
+        "kanji":"隣",
+        "hiragana":"となり",
+        "romaji":"tonari",
+        "meaning" : "a fianco"
+    },
+    {
+        "kanji":"今何時ですか",
+        "hiragana":"いまなにじですか",
+        "romaji":"ima naniji desuka",
+        "meaning" : "che ore sono"
     }
 ]

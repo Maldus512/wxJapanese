@@ -129,6 +129,8 @@ class MainWindow(wx.Frame):
 
         close = True
         for el in questions:
+            if len(data[el].GetValue()) == 0:
+                continue
             if fuzz.ratio(data[el].GetValue(), correct[el]) < 90:
                 close = False
                 signal[el].SetBitmap(wx.Bitmap("wrong.png", wx.BITMAP_TYPE_ANY))
@@ -149,10 +151,12 @@ class MainWindow(wx.Frame):
         else:
             questions = ["romaji", "meaning"]
 
+        focused = self.FindFocus()
         for el in questions:
-            data[el].SetValue(correct[el])
-            signal[el].SetBitmap(wx.Bitmap("correct.png", wx.BITMAP_TYPE_ANY))
-            signal[el].Show()
+            if data[el] == focused:
+                data[el].SetValue(correct[el])
+                signal[el].SetBitmap(wx.Bitmap("correct.png", wx.BITMAP_TYPE_ANY))
+                signal[el].Show()
 
         self.Layout()
         self.panel.Layout()
